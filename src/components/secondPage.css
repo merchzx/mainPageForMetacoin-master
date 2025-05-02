@@ -1,0 +1,509 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+#forBackgroundd {
+    height: 100vh;
+    background-image: url('scrollbackground.png');
+}
+
+#forBackk {
+    background-image: url('scrollbackground.png');
+    background-color: #210B54;
+    height: 100vh;
+}
+
+.wrapper {
+    margin-top: 5vh;
+    display: grid;
+    height: 85vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+
+.pooledTok,
+.search,
+.mainGraph,
+.pair,
+.balance,
+.exchange {
+    background-color: rgba(31, 12, 71, 0.4);
+    border-radius: 14px;
+}
+
+.pair {
+    font-size: grid ;
+}
+
+.pooledTok {
+    grid-area: 1 / 1 / 7 / 4;
+}
+
+.search {
+    grid-area: 7 / 1 / 13 / 4;
+}
+
+.mainGraph {
+    grid-area: 1 / 4 / 10 / 10;
+}
+
+.pair {
+    grid-area: 10 / 4 / 13 / 10;
+}
+
+.exchange {
+    grid-area: 1 / 10 / 7 / 13;
+}
+
+.balance {
+    grid-area: 7 / 10 / 13 / 13;
+}
+
+header {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 5px 8px rgb(0, 0, 0);
+}
+
+.logo {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: -0.5px;
+    padding-top: -10px;
+    padding-left: 20px;
+    color: #E86EA0;
+    /* color: linear-gradient(#E86EA0,#BA28FF); */
+}
+
+nav {
+    padding-top: 25px;
+    width: 706px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    color: #E86EA0;
+    text-decoration: none;
+}
+
+nav>img {
+    margin-right: 45px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.loginAndElse {
+    padding-top: 25px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.switchTheme {
+    width: 60px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    height: 32px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    border-radius: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#login {
+    padding-left: 54px;
+    padding-top: 7px;
+    margin-top: -5px;
+    width: 147px;
+    height: 32px;
+    border-radius: 66px;
+    text-decoration: none;
+    color: #210B54;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+}
+
+.whatWeExchange,
+.liquidity {
+    background-color: rgba(31, 12, 71, 0.6);
+    border-radius: 7px;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.whatWeExchange>div {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.whatWeExchange>div>img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatWeExchange>div>p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+}
+
+.whatWeExchange>p {
+
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.liquidity>div>p:nth-child(1) {
+    margin-top: 30px;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.liquidity>div>p:nth-child(2) {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.liquidity>div>p:nth-child(3) {
+    float: right;
+    margin-top: -22px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #23A757;
+}
+
+.liquidity>div:nth-child(2)>p:nth-child(3) {
+    color: red;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    background-color: #0F0527;
+    border-radius: 67px;
+    padding-left: 5%;
+    width: 80%;
+    padding-top: -5%;
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 10%;
+}
+
+.searchBar>input {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.searchBar>input::placeholder {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.searchBar>img {
+    width: 28px;
+    margin-top: 3%;
+    height: 28px;
+}
+
+.crypto {
+    align-items: center;
+    width: 80%;
+    margin-left: 12%;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: row;
+}
+
+.crypto>img {
+    width: 40px;
+    height: 40px;
+}
+
+.crypto>p {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+}
+
+.crypto>p:nth-child(3) {
+    margin-left: auto;
+}
+
+.pair {
+    padding-top: 20px;
+}
+
+.pair>p {
+    font-size: 22px;
+    font-weight: 100;
+    color: #ffff;
+    display: inline;
+}
+
+.pair>p:nth-child(1) {
+    margin-right: 53%;
+    margin-left: 10%;
+}
+
+.pair>p:nth-child(2) {
+    margin-right: 13%;
+}
+
+.exchange {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.currentBalance {
+    display: flex;
+    flex-direction: row;
+}
+
+.currentBalance>p {
+    font-weight: 300;
+    font-size: 27px;
+    color: #ffff;
+    margin-left: 30px;
+}
+
+
+.currentBalance>p:nth-child(2),
+.currentBalance>p:nth-child(3) {
+    color: #BA28FF;
+}
+
+.Amount {
+    width: 95%;
+    height: 25%;
+    border-radius: 10px;
+    opacity: 80%;
+    background-color: #0F0527;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Amount>p {
+    color: #ffff;
+}
+
+.am {
+    width: 40%;
+    margin-right: 40%;
+    font-size: 27px;
+    font-weight: 100;
+}
+
+.tick {
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.usend {
+    margin-top: 0px;
+    width: 40%;
+    margin-right: 35%;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+.usend2 {
+    margin-top: -2%;
+    width: 40%;
+    margin-right: 50%;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.currPrice {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+#slide,
+#slide-2 {
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.exchange>img {
+    margin-top: 3%;
+    margin-left: 45%;
+    margin-bottom: -2%;
+}
+
+.yourBalanceButt {
+    width: 21%;
+    margin-left: 10px;
+    height: 5%;
+    margin-top: -8%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.lineWithText {
+    margin-top: -5px;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.boldLine {
+    display: flex;
+    flex-direction: row;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.logoOfCurrency {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.arrowToRight {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -10px;
+}
+
+.burgerMenu {
+    display: none;
+    visibility: hidden;
+}
+.pair {
+    position: relative;
+    top: -20%;
+    left: 25%;
+    width: 50%;
+    height: 20%;
+}
+
+
+
+@media screen and (max-width:440px) {
+    .burgerMenu {
+        display: block;
+        visibility: visible;
+    }
+
+    header {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    nav>#login {
+        width: 30%;
+        padding-left: 45px;
+        font-weight: 400;
+        margin-left: 53%;
+        margin-bottom: 10px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #forBackk {
+        height: 100%;
+    }
+
+    #forBackgroundd,
+    body {
+        height: 210vh;
+    }
+
+    .crypto {
+        display: none;
+    }
+
+    .searchBar {
+        height: 70%;
+    }
+
+    .search {
+        background: none;
+    }
+
+    .pooledTok {
+        padding-bottom: 20px;
+    }
+
+    .pair {
+        visibility: hidden;
+    }
+
+    .exchange {
+        padding-bottom: 60px;
+    }
+
+    .yourBalanceButt {
+        top: 158%;
+        width: 90%;
+        margin-top: 0px;
+    }
+}

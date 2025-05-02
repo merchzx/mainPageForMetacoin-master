@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+#forBackground {
+    height: 3600px;
+    background-image: url('scrollbackground.png');
+}
+
+#forBack {
+    background-color: #210B54;
+    height: 3600px;
+}
+
+#wrapper {
+    /* border: 3px solid red; */
+    width: 1254px;
+    height: 3200px;
+    margin-left: 350px;
+}
+
+.startNow {
+    margin-top: 67px;
+}
+
+.startNow>h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 105px;
+}
+
+.startNow>h1:nth-child(1) {
+    color: #BA28FF;
+}
+
+
+.startNow>h1:nth-child(2) {
+    color: #E86EA0;
+}
+
+.startNow>p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 21px;
+    margin-bottom: 90px;
+}
+
+.startNow>a {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 262px;
+    height: 59px;
+    border-radius: 66px;
+    text-decoration: none;
+    color: #FFFDFA;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+}
+
+.trending {
+    margin-top: 169px;
+}
+
+.trending>h1 {
+    color: #E86EA0;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 47px;
+    margin-left: 490px;
+}
+
+.miniGraphs {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-top: 94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1231px;
+    height: 330px;
+}
+
+.miniGraphs>div {
+    scroll-snap-align: center;
+    margin-right: 50px;
+    height: 250px;
+    /* border: 1px solid black; */
+}
+
+.popularMarkets {
+    margin-top: 25%;
+}
+
+.popularMarkets>h1 {
+    color: #E86EA0;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 47px;
+    margin-left: 420px;
+    margin-bottom: 100px;
+}
+
+.largeGraph {
+    margin-bottom: 100px;
+}
+
+.popularMarkets>a {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 262px;
+    height: 59px;
+    border-radius: 66px;
+    text-decoration: none;
+    color: #FFFDFA;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    margin-left: 40%;
+
+}
+
+.ourResults {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ourResults>div {
+    width: 228px;
+}
+
+.ourResults>div>h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #BA28FF;
+    font-size: 63px;
+}
+
+.ourResults>div>p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 31px;
+    color: #FFFDFA;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25%;
+}
+
+.downloadOn {
+    margin-top: 50px;
+    width: 262px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.forText>p:nth-child(1) {
+    font-family: "Inter", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 21px;
+}
+
+
+.forText>p:nth-child(2) {
+    font-family: "Inter", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.toRow {
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product>h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+}
+
+.product>p {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+    margin-bottom: 57px;
+    color: rgb(255, 255, 255);
+}
+
+.product>p:nth-child(2) {
+    margin-top: 39px;
+}
+
+.burgerMenu {
+    visibility: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:440px) {
+    #wrapper,
+    .miniGraphs {
+        width: 95vw;
+        margin-left: 0px;
+    }
+
+    nav {
+        overflow-x: hidden;
+        width: 400px;
+    }
+
+    .burgerMenu {
+        visibility: visible;
+    }
+
+    header {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+
+    #wrapper {
+        height: 2900px;
+        margin-left: 20px;
+    }
+
+    .loginAndElse {
+        display: none;
+    }
+
+    .popularMarkets>h1,
+    .trending>h1 {
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+
+    .trending>h1 {
+        padding-left: 30%;
+    }
+
+    .ourResults {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ourResults>div {
+        margin-top: 10%;
+    }
+
+    .popularMarkets>a {
+        margin-left: 23%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .product,
+    .downloadOn,
+    footer {
+        transform: scale(0.7, 0.7);
+    }
+
+    .toRow {
+        height: 100%;
+        margin-left: -20px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    footer>div:nth-child(2) {
+        display: none;
+    }
+
+    .product {
+        margin-top: -4%;
+    }
+
+    footer {
+        margin-top: 100px;
+        margin-left: -15%;
+    }
+
+    .startNow>h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+    }
+    
+    .startNow>h1:nth-child(1) {
+        color: #BA28FF;
+        margin-left: 20%;
+    }
+    
+    
+    .startNow>h1:nth-child(2) {
+        margin-left: 5%;
+        color: #E86EA0;
+    }
+    
+    .startNow>p {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        color: white;
+        margin-left: 10%;
+        font-size: 16px;
+        margin-bottom: 90px;
+    }
+    
+    .startNow>a {
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        width: 262px;
+        height: 59px;
+        margin-left: 22%;
+        border-radius: 66px;
+        text-decoration: none;
+        color: #FFFDFA;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        background: linear-gradient(#E86EA0, #BA28FF);
+    }
+
+    #forBackground,#forBack {
+        height: 3300px;
+    }
+
+    nav > #login {
+        width: 30%;
+        padding-left: 45px;
+        font-weight: 400;
+        margin-left: 53%;
+        margin-bottom: 10px;
+    }
+
+}
+

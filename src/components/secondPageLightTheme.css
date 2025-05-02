@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* LT - LightTheme */
+
+#forBackgrounddLT {
+    height: 100vh;
+    background-image: url('/public/lightbackground.png');
+}
+
+#forBackkLT {
+    background-image: url('/public/lightbackground.png');
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.wrapper {
+    margin-top: 5vh;
+    display: grid;
+    height: 85vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+
+.pooledTokLT,
+.searchLT,
+.mainGraphLT,
+.pairLT,
+.balanceLT,
+.exchangeLT {
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 14px;
+}
+
+.pooledTokLT {
+    grid-area: 1 / 1 / 7 / 4;
+}
+
+.searchLT {
+    grid-area: 7 / 1 / 13 / 4;
+}
+
+.mainGraphLT {
+    grid-area: 1 / 4 / 10 / 10;
+}
+
+.pairLT {
+    grid-area: 10 / 4 / 13 / 10;
+}
+
+.exchangeLT {
+    grid-area: 1 / 10 / 7 / 13;
+}
+
+.balanceLT {
+    grid-area: 7 / 10 / 13 / 13;
+}
+
+header {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: -0.5px;
+    padding-top: -10px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* color: linear-gradient(#E86EA0,#BA28FF); */
+}
+
+nav {
+    padding-top: 25px;
+    width: 706px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+nav>img {
+    margin-right: 45px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.loginAndElseLT {
+    padding-top: 25px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.switchThemeLT {
+    width: 60px;
+    height: 32px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    border-radius: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#loginLT {
+    padding-left: 54px;
+    padding-top: 7px;
+    width: 147px;
+    height: 32px;
+    border-radius: 66px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+}
+
+.whatWeExchangeLT,
+.liquidityLT {
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.whatWeExchangeLT>div {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.whatWeExchangeLT>div>img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatWeExchangeLT>div>p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.whatWeExchangeLT>p {
+
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.liquidityLT>div>p:nth-child(1) {
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.liquidityLT>div>p:nth-child(2) {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.liquidityLT>div>p:nth-child(3) {
+    float: right;
+    margin-top: -22px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #23A757;
+}
+
+.liquidityLT>div:nth-child(2)>p:nth-child(3) {
+    color: red;
+}
+
+.searchBarLT > img {
+    color: black;
+}
+
+.searchBarLT {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 67px;
+    padding-left: 5%;
+    width: 80%;
+    padding-top: -5%;
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 10%;
+}
+
+.searchBarLT>input {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 0px;
+    background: none;
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+.searchBarLT>input::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.searchBarLT > img {
+    width: 28px;
+    margin-top: 3%;
+    height: 28px;
+}
+
+.cryptoLT {
+    align-items: center;
+    width: 80%;
+    margin-left: 12%;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: row;
+}
+
+.cryptoLT>img {
+    width: 40px;
+    height: 40px;
+}
+
+.cryptoLT>p {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.cryptoLT>p:nth-child(3) {
+    margin-left: auto;
+}
+
+.pairLT {
+    padding-top: 20px;
+}
+
+.pairLT>p {
+    font-size: 22px;
+    font-weight: 100;
+    color: #000000;
+    display: inline;
+}
+
+.pairLT>p:nth-child(1) {
+    margin-right: 53%;
+    margin-left: 10%;
+}
+
+.pairLT>p:nth-child(2) {
+    margin-right: 13%;
+}
+
+.exchangeLT {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.currentBalanceLT {
+    display: flex;
+    flex-direction: row;
+}
+
+.currentBalanceLT>p {
+    font-weight: 300;
+    font-size: 27px;
+    color: #000000;
+    margin-left: 30px;
+}
+
+
+.currentBalanceLT>p:nth-child(2),
+.currentBalanceLT>p:nth-child(3) {
+    color: #BA28FF;
+}
+
+.AmountLT {
+    width: 95%;
+    height: 25%;
+    border-radius: 10px;
+    opacity: 100%;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.AmountLT>p {
+    color: #000000;
+}
+
+.amLT {
+    width: 40%;
+    margin-right: 40%;
+    font-size: 27px;
+    font-weight: 200;
+}
+
+.tickLT {
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.usendLT {
+    margin-top: 0px;
+    width: 40%;
+    margin-right: 35%;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+.usend2LT {
+    margin-top: -2%;
+    width: 40%;
+    margin-right: 50%;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.currPriceLT {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+#slideLT,#slideLT-2 {
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.exchangeLT > img {
+    margin-top: 3%;
+    margin-left: 45%;
+    margin-bottom: -2%;
+}
+
+.yourBalanceButtLT {
+    width: 21%;
+    margin-left: 10px;
+    height: 5%;
+    margin-top: -10%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color:#ffffff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.lineWithTextLT {
+    margin-top: -5px;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.boldLineLT {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.logoOfCurrencyLT {
+    margin-top: 15px;
+    margin-left:10px;
+}
+
+.arrowToRightLT {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -10px;
+}

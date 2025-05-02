@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+#forBackgroundLT {
+    height: 3600px;
+    background-image: url('/public/lightbackground.png');
+}
+
+#forBackLT {
+    background-color: #ffffff;
+    height: 3600px;
+}
+
+#wrapper {
+    /* border: 3px solid red; */
+    width: 1254px;
+    height: 3200px;
+    margin-left: 350px;
+}
+
+.startNowLT {
+    margin-top: 67px;
+}
+
+.startNowLT>h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 105px;
+}
+
+.startNowLT>h1:nth-child(1) {
+    color: #BA28FF;
+}
+
+
+.startNowLT>h1:nth-child(2) {
+    color: #E86EA0;
+}
+
+.startNowLT>p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    margin-bottom: 90px;
+}
+
+.startNowLT>a {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 262px;
+    height: 59px;
+    border-radius: 66px;
+    text-decoration: none;
+    color: #FFFDFA;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+}
+
+.trendingLT {
+    margin-top: 169px;
+}
+
+.trendingLT>h1 {
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 47px;
+    margin-left: 490px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.miniGraphsLT {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-top: 94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1231px;
+    height: 330px;
+}
+
+.miniGraphsLT>div {
+    scroll-snap-align: center;
+    margin-right: 50px;
+    height: 250px;
+    /* border: 1px solid black; */
+}
+
+.popularMarketsLT {
+    margin-top: 25%;
+}
+
+.popularMarketsLT>h1 {
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 47px;
+    margin-left: 420px;
+    margin-bottom: 100px;
+}
+
+.largeGraphLT {
+    margin-bottom: 100px;
+}
+
+.popularMarketsLT>a {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 262px;
+    height: 59px;
+    border-radius: 66px;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    margin-left: 40%;
+
+}
+
+.ourResultsLT {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ourResultsLT>div {
+    width: 228px;
+}
+
+.ourResultsLT>div>h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 63px;
+}
+
+.ourResultsLT>div>p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 31px;
+    color: #000000;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25%;
+}
+
+.downloadOnLT {
+    margin-top: 50px;
+    width: 262px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.forTextLT>p:nth-child(1) {
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 21px;
+}
+
+
+.forTextLT>p:nth-child(2) {
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.toRowLT {
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productLT {
+    display: flex;
+    flex-direction: column;
+}
+
+.productLT>h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+}
+
+.productLT>p {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 26px;
+    margin-bottom: 57px;
+    color: rgb(0, 0, 0);
+}
+
+.productLT>p:nth-child(2) {
+    margin-top: 39px;
+}
+
+.burgerMenu {
+    visibility: hidden;
+}
+
+@media screen and (max-width:440px) {
+    #wrapper,
+    .miniGraphsLT {
+        width: 95vw;
+        margin-left: 0px;
+    }
+
+    nav {
+        overflow-x: hidden;
+        width: 400px;
+    }
+
+    .burgerMenu {
+        visibility: visible;
+    }
+
+    header {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+
+    #wrapper {
+        height: 2900px;
+        margin-left: 20px;
+    }
+
+    .loginAndElseLT {
+        display: none;
+    }
+
+    .popularMarketsLT>h1,
+    .trendingLT>h1 {
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+
+    .trendingLT>h1 {
+        padding-left: 30%;
+    }
+
+    .ourResultsLT {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ourResultsLT>div {
+        margin-top: 10%;
+    }
+
+    .popularMarketsLT>a {
+        margin-left: 23%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .productLT,
+    .downloadOnLT,
+    footer {
+        transform: scale(0.7, 0.7);
+    }
+
+    .toRowLT {
+        height: 100%;
+        margin-left: -20px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    footer>div:nth-child(2) {
+        display: none;
+    }
+
+    .productLT {
+        margin-top: -4%;
+    }
+
+    footer {
+        margin-top: 100px;
+        margin-left: -15%;
+    }
+
+    .startNowLT>h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+    }
+    
+    .startNowLT>h1:nth-child(1) {
+        color: #BA28FF;
+        margin-left: 20%;
+    }
+    
+    
+    .startNowLT>h1:nth-child(2) {
+        margin-left: 5%;
+        color: #E86EA0;
+    }
+    
+    .startNowLT>p {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        color: white;
+        margin-left: 10%;
+        font-size: 16px;
+        margin-bottom: 90px;
+    }
+    
+    .startNowLT>a {
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        width: 262px;
+        height: 59px;
+        margin-left: 22%;
+        border-radius: 66px;
+        text-decoration: none;
+        color: #FFFDFA;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        background: linear-gradient(#E86EA0, #BA28FF);
+    }
+
+    #forBackgroundLT,#forBackLT {
+        height: 3300px;
+    }
+
+    nav > #login {
+        width: 30%;
+        padding-left: 45px;
+        font-weight: 400;
+        margin-left: 53%;
+        margin-bottom: 10px;
+    }
+
+}
