@@ -2,6 +2,7 @@ import '../components/thirdPage.css'
 import React, { useEffect, useRef, memo } from 'react';
 import { Header } from './Header';
 import { BurgerMenu } from './burgerMenuComponent';
+import CryptoWidget from './CurrentPrice';
 
 const TradingViewWidget = (props) => {
     const containerRef = useRef();
@@ -40,11 +41,12 @@ const TradingViewWidget = (props) => {
 
 function ItemOfTable(props) {
     return (<div className='itemOfTable'>
-        <img src={props.src+'.png'}></img>
+        <img src='heart.png'></img>
+        <img src={props.src + '.png'}></img>
         <p className='boldText'>{props.tick}</p>
         <p className='boldText'>{props.fullName}</p>
         <p className='boldText'>{props.addres}</p>
-        <p className='boldText'>PRICE</p>
+        <p className='boldText'><CryptoWidget></CryptoWidget></p>
         <p className='boldText'>{props.value}</p>
         <p className='boldText'>{props.balance}</p>
         <p className='boldText'>{props.liquidity}</p>
@@ -84,7 +86,13 @@ export function LargeTable(props) {
                             <p className='boldText'>volume(24)</p>
                             <p className='boldText'>transactions</p>
                         </div>
-                        <ItemOfTable tick='ETH'></ItemOfTable>
+                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='sol' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='xrp' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='usdt' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
                     </div>
                 </div>
             </div>
