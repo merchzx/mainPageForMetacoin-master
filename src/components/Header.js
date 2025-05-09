@@ -6,14 +6,14 @@ export function Header(props) {
     if (props.amount === "6") {
         return (
             <header>
-                <h1 className='logo'>Crypto Sigmas</h1>
+                <h1 className='logo'>FOMO DEX</h1>
                 <nav>
-                    <a href='#'>Finance</a><img src='arrow.png'></img>
-                    <a href='#'>Products</a><img src='arrow.png'></img>
-                    <a href='#'>Trade</a><img src='arrow.png'></img>
-                    <a href='#'>Wallet</a><img src='arrow.png'></img>
-                    <a href='#'>Markets</a>
-                    <a href='#'>Campaigns</a><img src='arrow.png'></img>
+                    <Link to={'/largeGraph'}>Finance</Link><img src='arrow.png'></img>
+                    <Link to={'/largeTable'} href='#'>Products</Link><img src='arrow.png'></img>
+                    <Link to={'/'} href='#'>Trade</Link><img src='arrow.png'></img>
+                    <Link to={'/'} href='#'>Wallet</Link><img src='arrow.png'></img>
+                    <Link to={'/'} href='#'>Markets</Link><img src='arrow.png'></img>
+                    <Link to={'/'} href='#'>Campaigns</Link><img src='arrow.png'></img>
                 </nav>
                 <div className='loginAndElse'>
                     <img src='internet.png' href="#"></img>
@@ -32,14 +32,14 @@ export function Header(props) {
     else if (props.amount === "5") {
         return (
             <header>
-                <h1 className='logo'>Crypto Sigmas</h1>
-                <nav>
-                    <a href='#'>Finance</a><img src='arrow.png'></img>
-                    <a href='#'>Products</a><img src='arrow.png'></img>
-                    <a href='#'>Trade</a><img src='arrow.png'></img>
-                    <a href='#'>Wallet</a><img src='arrow.png'></img>
-                    <a href='#'>Markets</a>
-                    <a href='#'>Campaigns</a><img src='arrow.png'></img>
+                <h1 className='logo'>FOMO DEX</h1>
+                <nav >
+                    <Link to={'/largeGraph'}>Finance</Link><img src='arrow.png'></img>
+                    <Link to={'/largeTable'} href='#'>Products</Link><img src='arrow.png'></img>
+                    <Link to={'/'} href='#'>Trade</Link><img src='arrow.png'></img>
+                    <Link to={'/'} href='#'>Wallet</Link><img src='arrow.png'></img>
+                    <Link to={'/'} href='#'>Markets</Link><img src='arrow.png'></img>
+                    <Link to={'/'} href='#'>Campaigns</Link><img src='arrow.png'></img>
                 </nav>
                 <div className='loginAndElse'>
                     <img src='internet.png' href="#"></img>
@@ -58,10 +58,10 @@ export function Header(props) {
     else if (props.amount === "3") {
         return (
             <header>
-                <h1 className='logo'>Crypto Sigmas</h1>
-                <nav>
-                    <a href='#'>Products</a><img src='arrow.png'></img>
-                    <a href='#'>Trade</a><img src='arrow.png'></img>
+                <h1 className='logo'>FOMO DEX</h1>
+                <nav className='miniNav'>
+                <Link to={'/largeTable'} href='#'>Products</Link><img src='arrow.png'></img>
+                <Link to={'/'} href='#'>Trade</Link><img src='arrow.png'></img>
                 </nav>
                 <div className='loginAndElse'>
                     <img src='internet.png' href="#"></img>
@@ -80,10 +80,10 @@ export function Header(props) {
     else {
         return (
             <header>
-                <h1 className='logo'>Crypto Sigmas</h1>
-                <nav>
-                    <a href='#'>Products</a><img src='arrow.png'></img>
-                    <a href='#'>Trade</a><img src='arrow.png'></img>
+                <h1 className='logo'>FOMO DEX</h1>
+                <nav className='miniNav'>
+                <Link to={'/largeTable'} href='#'>Products</Link><img src='arrow.png'></img>
+                <Link to={'/'} href='#'>Trade</Link><img src='arrow.png'></img>
                 </nav>
                 <div className='loginAndElse'>
                     <img src='internet.png' href="#"></img>

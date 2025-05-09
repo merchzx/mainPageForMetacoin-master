@@ -1,5 +1,5 @@
 import '../components/thirdPage.css'
-import React, { useEffect, useRef, memo } from 'react';
+import React, { useEffect, useRef, useState, memo } from 'react';
 import { Header } from './Header';
 import { BurgerMenu } from './burgerMenuComponent';
 import CryptoWidget from './CurrentPrice';
@@ -40,18 +40,25 @@ const TradingViewWidget = (props) => {
 };
 
 function ItemOfTable(props) {
+
+    const [isLiked, setLiked] = useState(false)
+
+    const toggleLike = () => {
+        setLiked(!isLiked)
+    }
+
     return (<div className='itemOfTable'>
-        <img src='heart.png'></img>
+        <img src={isLiked ? 'heartPainted.png' : 'heart.png'} onClick={toggleLike}></img>
         <img src={props.src + '.png'}></img>
         <p className='boldText'>{props.tick}</p>
         <p className='boldText'>{props.fullName}</p>
         <p className='boldText'>{props.addres}</p>
         <p className='boldText'><CryptoWidget></CryptoWidget></p>
         <p className='boldText'>{props.value}</p>
-        <p className='boldText'>{props.balance}</p>
-        <p className='boldText'>{props.liquidity}</p>
-        <p className='boldText'>{props.volume}</p>
-        <p className='boldText'>{props.transaction}</p>
+        <p id='marginLeftThirdPage' className='boldText'>{props.balance}</p>
+        <p id='marginLeftThirdPage' className='boldText'>{props.liquidity}</p>
+        <p id='marginLeftThirdPage' className='boldText'>{props.volume}</p>
+        <p id='marginLeftThirdPage' className='boldText'>{props.transaction}</p>
     </div>)
 }
 
@@ -61,7 +68,7 @@ export function LargeTable(props) {
             <div id='forBackgroundd'>
                 <BurgerMenu theme='dark'></BurgerMenu>
                 <Header link='LightThemeLargeTable' amount='6'></Header>
-                <div class="wrapper">
+                <div class="wrapperThirdPage">
                     <div className='sliderWithCurrencyes'>
                         <TradingViewWidget name="BINANCE:BTCUSDT"></TradingViewWidget>
                         <TradingViewWidget name="BINANCE:ETHUSDT"></TradingViewWidget>
@@ -69,7 +76,7 @@ export function LargeTable(props) {
                         <TradingViewWidget name="BINANCE:LTCUSDT"></TradingViewWidget>
                         <TradingViewWidget name="BINANCE:APTUSDT"></TradingViewWidget>
                     </div>
-                    <div className='searchBar'>
+                    <div className='searchBarThirdPage'>
                         <img src='searchIcon.png'></img>
                         <input type='text' placeholder='Seacrh'></input>
                     </div>
@@ -79,12 +86,12 @@ export function LargeTable(props) {
                             <img src='heart.png'></img>
                             <p className='boldText'>token name</p>
                             <p className='boldText'>addres</p>
-                            <p className='boldText'>price</p>
-                            <p className='boldText'>value</p>
-                            <p className='boldText'>balance</p>
-                            <p className='boldText'>liquidity</p>
-                            <p className='boldText'>volume(24)</p>
-                            <p className='boldText'>transactions</p>
+                            <p id='marginToLeft' className='boldText'>price</p>
+                            <p id='marginToLeft' className='boldText'>value</p>
+                            <p id='marginToLeft' className='boldText'>balance</p>
+                            <p id='marginToLeft' className='boldText'>liquidity</p>
+                            <p id='marginToLeft' className='boldText'>volume(24)</p>
+                            <p id='marginToLeft' className='boldText'>transactions</p>
                         </div>
                         <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
                         <ItemOfTable src='sol' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>

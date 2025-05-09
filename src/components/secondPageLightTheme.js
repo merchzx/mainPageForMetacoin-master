@@ -2,6 +2,7 @@ import '../components/secondPageLightTheme.css'
 import React, { useEffect, useRef, memo } from 'react';
 import { Header } from './Header';
 import { BurgerMenu } from './burgerMenuComponent';
+import CryptoWidget from './CurrentPrice';
 
 function TradingViewWidget() {
     const container = useRef();
@@ -55,8 +56,13 @@ function CryptoCurrence(props) {
 }
 
 export function SimpleLine(props) {
+    if (props.isCurrPrice === 'true') {
+        return (
+            <p className='lineWithTextLT'>{props.zagol}<p className='boldLine'>1 ETH = <CryptoWidget></CryptoWidget> USDT</p></p>
+        )
+    }
     return (
-        <p className='lineWithTextLT'>{props.zagol}<p className='boldLineLT'>{props.amount}</p></p>
+        <p className='lineWithTextLT'>{props.zagol}<p className='boldLine'>{props.amount}</p></p>
     )
 }
 
@@ -69,50 +75,23 @@ export function Polzun(props) {
 export function PageWithGraphLightTheme(props) {
     return (
         <div id='forBackkLT'>
-            <div id='forBackgroundLT'>
-                <Header link='largeGraph' amount='3'></Header>
+            <div id='forBackgrounddLT'>
                 <BurgerMenu theme='light'></BurgerMenu>
-                <div class="wrapper">
-                    <div class="exchangeLT">
-                        <div className='currentBalanceLT'>
-                            <p>Balance</p>
-                            <p>0,00 ETH</p>
-                            <p>0 USDT</p>
+                <Header link='largeGraph' amount='2'></Header>
+                <div className="wrapperLT">
+                    <div className="searchLT">
+                        <div className='searchBarLT'>
+                            <img src='searchIcon.png'></img>
+                            <input type='text' placeholder='Seacrh coin or paste any token'></input>
                         </div>
-                        <div className='AmountLT'>
-                            <p className='amLT'>Amount</p>
-                            <p className='tickLT'>ETH</p>
-                            <p className='usendLT'>YOU SEND</p>
-                            <p className='currPriceLT'>$ 1,555.55</p>
-                            <Polzun />
-                        </div>
-                        <img src='exchange.png'></img>
-                        <div className='AmountLT'>
-                            <p className='amLT'>Amount</p>
-                            <p className='tickLT'>USDT</p>
-                            <p className='usend2LT'>YOU SEND</p>
-                            <p className='currPriceLT'>$ 1</p>
-                        </div>
-                        <button className='yourBalanceButtLT'>
-                            Your Balance or gas fee is not enough
-                        </button>
+                        <CryptoCurrence name='eth' tick='ETH' am='0'></CryptoCurrence>
+                        <CryptoCurrence name='usdt' tick='USDT' am='0'></CryptoCurrence>
+                        <CryptoCurrence name='sol' tick='SOL' am='0'></CryptoCurrence>
+                        <CryptoCurrence name='xrp' tick='XRP' am='0'></CryptoCurrence>
+                        <CryptoCurrence name='xrp' tick='XRP' am='0'></CryptoCurrence>
                     </div>
-                    <div class="balanceLT">
-                        <SimpleLine zagol='Rate' amount='1 ETH=1,985.98 USDT'></SimpleLine>
-                        <SimpleLine zagol='Inverse Rate' amount='1 USDT=0.0005 ETH'></SimpleLine>
-                        <SimpleLine zagol='Price Impact' amount='0.01%'></SimpleLine>
-                        <SimpleLine zagol='Gwei' amount='Slow:Gwei 32'></SimpleLine>
-                        <Polzun></Polzun>
-                        <SimpleLine zagol='Estimate gas fee' amount='0.004002 ETH~$7.99'></SimpleLine>
-                        <SimpleLine zagol='Liquidity Fee' amount='0.011 ETH'></SimpleLine>
-                        <div>
-                            <img className='logoOfCurrencyLT' src='eth.png'></img>
-                            <img className='arrowToRightLT' src='Vector.png'></img>
-                            <img src='usdt.png'></img>
-                        </div>
-                    </div>
-                    <div class="mainGraphLT"><TradingViewWidget></TradingViewWidget></div>
-                    <div class="pooledTokLT">
+                    <div className="mainGraphLT"><TradingViewWidget></TradingViewWidget></div>
+                    <div className="pooledTokLT">
                         <div className='whatWeExchangeLT'>
                             <p>Pooled Tokens</p>
                             <div>
@@ -135,24 +114,53 @@ export function PageWithGraphLightTheme(props) {
                             </div>
                         </div>
                     </div>
-                    <div class="searchLT">
-                        <div className='searchBarLT'>
-                            <img src='searchIcon.png'></img>
-                            <input type='text' placeholder='Seacrh coin or paste any token'></input>
+                    <div className="exchangeLT">
+                        <div className='currentBalanceLT'>
+                            <p>Balance</p>
+                            <p>0,00 ETH</p>
+                            <p>0 USDT</p>
                         </div>
-                        <CryptoCurrence name='eth' tick='ETH' am='0'></CryptoCurrence>
-                        <CryptoCurrence name='usdt' tick='USDT' am='0'></CryptoCurrence>
-                        <CryptoCurrence name='sol' tick='SOL' am='0'></CryptoCurrence>
-                        <CryptoCurrence name='xrp' tick='XRP' am='0'></CryptoCurrence>
-                        <CryptoCurrence name='xrp' tick='XRP' am='0'></CryptoCurrence>
+                        <div className='AmountLT'>
+                            <p className='amLT'>Amount</p>
+                            <p className='tickLT'>ETH</p>
+                            <p className='usendLT'>YOU SEND</p>
+                            <p className='currPriceLT'>$<CryptoWidget></CryptoWidget></p>
+                            <Polzun />
+                        </div>
+                        <img src='exchange.png'></img>
+                        <div className='AmountLT'>
+                            <p className='amLT'>Amount</p>
+                            <p className='tickLT'>USDT</p>
+                            <p className='usend2LT'>YOU SEND</p>
+                            <p className='currPriceLT'>$ 1</p>
+                        </div>
+                        <button className='yourBalanceButtLT'>
+                            Your Balance or gas fee is not enough
+                        </button>
                     </div>
-                    <div class="pairLT">
-                        <p>Pair</p>
-                        <p>Volume</p>
-                        <p>Time</p>
+
+                    <div className="balanceLT">
+                        <SimpleLine zagol='Rate' amount='' isCurrPrice="true"></SimpleLine>
+                        <SimpleLine zagol='Inverse Rate' amount='1 USDT=0.0005 ETH'></SimpleLine>
+                        <SimpleLine zagol='Price Impact' amount='0.01%'></SimpleLine>
+                        <SimpleLine zagol='Gwei' amount='Slow:Gwei 32'></SimpleLine>
+                        <Polzun></Polzun>
+                        <SimpleLine zagol='Estimate gas fee' amount='0.004002 ETH~$7.99'></SimpleLine>
+                        <SimpleLine zagol='Liquidity Fee' amount='0.011 ETH'></SimpleLine>
+                        <div>
+                            <img className='logoOfCurrencyLT' src='eth.png'></img>
+                            <img className='arrowToRightLT' src='Vector.png'></img>
+                            <img src='usdt.png'></img>
+                        </div>
                     </div>
+                </div>
+                <div className="pairLT">
+                    <p>Pair</p>
+                    <p>Volume</p>
+                    <p>Time</p>
                 </div>
             </div>
         </div>
+
     )
 }

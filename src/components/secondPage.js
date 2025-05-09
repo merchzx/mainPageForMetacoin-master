@@ -4,6 +4,7 @@ import { Header } from './Header';
 import { BurgerMenu } from './burgerMenuComponent';
 import CryptoWidget from './CurrentPrice';
 
+
 function TradingViewWidget() {
     const container = useRef();
 

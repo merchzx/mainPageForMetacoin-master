@@ -36,7 +36,7 @@
 }
 
 .pair {
-    font-size: grid ;
+    font-size: grid;
 }
 
 .pooledTok {
@@ -71,75 +71,6 @@ header {
     box-shadow: 0px 5px 8px rgb(0, 0, 0);
 }
 
-.logo {
-    font-family: "Philosopher", sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    letter-spacing: -0.5px;
-    padding-top: -10px;
-    padding-left: 20px;
-    color: #E86EA0;
-    /* color: linear-gradient(#E86EA0,#BA28FF); */
-}
-
-nav {
-    padding-top: 25px;
-    width: 706px;
-    height: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-nav>a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 21px;
-    color: #E86EA0;
-    text-decoration: none;
-}
-
-nav>img {
-    margin-right: 45px;
-    margin-left: 15px;
-    cursor: pointer;
-}
-
-.loginAndElse {
-    padding-top: 25px;
-    width: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.switchTheme {
-    width: 60px;
-    margin-top: -5px;
-    margin-bottom: 5px;
-    height: 32px;
-    background: linear-gradient(#E86EA0, #BA28FF);
-    border-radius: 65px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#login {
-    padding-left: 54px;
-    padding-top: 7px;
-    margin-top: -5px;
-    width: 147px;
-    height: 32px;
-    border-radius: 66px;
-    text-decoration: none;
-    color: #210B54;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    background: linear-gradient(#E86EA0, #BA28FF);
-}
 
 .whatWeExchange,
 .liquidity {
@@ -399,7 +330,6 @@ nav>img {
 .lineWithText {
     margin-top: -5px;
     padding-top: 20px;
-    margin-left: 10px;
     margin-right: 10px;
     display: flex;
     flex-direction: row;
@@ -433,6 +363,7 @@ nav>img {
     display: none;
     visibility: hidden;
 }
+
 .pair {
     position: relative;
     top: -20%;
@@ -443,7 +374,7 @@ nav>img {
 
 
 
-@media screen and (max-width:440px) {
+@media screen and (max-width:441px) {
     .burgerMenu {
         display: block;
         visibility: visible;
@@ -474,7 +405,7 @@ nav>img {
 
     #forBackgroundd,
     body {
-        height: 210vh;
+        height: 290vh;
     }
 
     .crypto {
@@ -502,8 +433,14 @@ nav>img {
     }
 
     .yourBalanceButt {
-        top: 158%;
+        top: 223%;
         width: 90%;
         margin-top: 0px;
+    }
+
+    .exchange>img {
+        margin-top: 5%;
+        margin-left: 45%;
+        margin-bottom: -2%;
     }
 }

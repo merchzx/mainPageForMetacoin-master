@@ -3,8 +3,6 @@
     font-family: "Inter", sans-serif;
 }
 
-/* LT - LightTheme */
-
 #forBackgrounddLT {
     height: 100vh;
     background-image: url('/public/lightbackground.png');
@@ -12,11 +10,11 @@
 
 #forBackkLT {
     background-image: url('/public/lightbackground.png');
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     height: 100vh;
 }
 
-.wrapper {
+.wrapperLT {
     margin-top: 5vh;
     display: grid;
     height: 85vh;
@@ -26,15 +24,18 @@
     grid-row-gap: 20px;
 }
 
-
 .pooledTokLT,
 .searchLT,
 .mainGraphLT,
 .pairLT,
 .balanceLT,
 .exchangeLT {
-    background-color: rgba(255, 255, 255, 0.651);
+    background-color: rgb(255, 255, 255);
     border-radius: 14px;
+}
+
+.pairLT {
+    font-size: grid;
 }
 
 .pooledTokLT {
@@ -66,77 +67,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.logo{
-    font-family: "Philosopher", sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    letter-spacing: -0.5px;
-    padding-top: -10px;
-    background: linear-gradient(#E86EA0, #BA28FF);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    /* color: linear-gradient(#E86EA0,#BA28FF); */
-}
-
-nav {
-    padding-top: 25px;
-    width: 706px;
-    height: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-nav>a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 21px;
-    background: linear-gradient(#E86EA0, #BA28FF);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-nav>img {
-    margin-right: 45px;
-    margin-left: 15px;
-    cursor: pointer;
-}
-
-.loginAndElseLT {
-    padding-top: 25px;
-    width: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.switchThemeLT {
-    width: 60px;
-    height: 32px;
-    background: linear-gradient(#E86EA0, #BA28FF);
-    border-radius: 65px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#loginLT {
-    padding-left: 54px;
-    padding-top: 7px;
-    width: 147px;
-    height: 32px;
-    border-radius: 66px;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    background: linear-gradient(#E86EA0, #BA28FF);
+    box-shadow: 0px 5px 8px rgb(0, 0, 0);
 }
 
 .whatWeExchangeLT,
@@ -170,28 +101,25 @@ nav>img {
     margin-left: 20px;
     font-weight: 400;
     font-size: 22px;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .whatWeExchangeLT>p {
-
     font-weight: 300;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: black;
 }
-
-
 
 .liquidityLT>div>p:nth-child(1) {
     margin-top: 30px;
-    color: rgb(0, 0, 0);
+    color: black;
     font-weight: 300;
     font-size: 15px;
 }
 
 .liquidityLT>div>p:nth-child(2) {
     margin-top: 10px;
-    color: rgb(0, 0, 0);
+    color: black;
     font-size: 20px;
     font-weight: 500;
 }
@@ -208,14 +136,11 @@ nav>img {
     color: red;
 }
 
-.searchBarLT > img {
-    color: black;
-}
-
 .searchBarLT {
     display: flex;
     flex-direction: row;
-    background-color: #ffffff;
+    background-color: white;
+    border: 1px solid black;
     border-radius: 67px;
     padding-left: 5%;
     width: 80%;
@@ -226,22 +151,23 @@ nav>img {
 }
 
 .searchBarLT>input {
-    width: 100%;
+    width: 90%;
     margin-left: 5%;
     margin-top: 0px;
+    padding-bottom: 2%;
     background: none;
     outline: none;
     border: none;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .searchBarLT>input::placeholder {
-    color: rgb(0, 0, 0);
+    color: black;
     font-size: 16px;
     font-weight: 300;
 }
 
-.searchBarLT > img {
+.searchBarLT>img {
     width: 28px;
     margin-top: 3%;
     height: 28px;
@@ -265,7 +191,7 @@ nav>img {
     margin-left: 20px;
     font-weight: 400;
     font-size: 22px;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .cryptoLT>p:nth-child(3) {
@@ -279,7 +205,7 @@ nav>img {
 .pairLT>p {
     font-size: 22px;
     font-weight: 100;
-    color: #000000;
+    color: black;
     display: inline;
 }
 
@@ -305,10 +231,9 @@ nav>img {
 .currentBalanceLT>p {
     font-weight: 300;
     font-size: 27px;
-    color: #000000;
+    color: black;
     margin-left: 30px;
 }
-
 
 .currentBalanceLT>p:nth-child(2),
 .currentBalanceLT>p:nth-child(3) {
@@ -319,8 +244,8 @@ nav>img {
     width: 95%;
     height: 25%;
     border-radius: 10px;
-    opacity: 100%;
-    background-color: #ffffff;
+    opacity: 80%;
+    background-color: white;
     margin-top: 20px;
     padding-left: 20px;
     display: flex;
@@ -329,14 +254,15 @@ nav>img {
 }
 
 .AmountLT>p {
-    color: #000000;
+    color: black;
+    font-weight: 300;
 }
 
 .amLT {
     width: 40%;
     margin-right: 40%;
     font-size: 27px;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 .tickLT {
@@ -352,7 +278,6 @@ nav>img {
     font-weight: 100;
 }
 
-
 .usend2LT {
     margin-top: -2%;
     width: 40%;
@@ -362,20 +287,23 @@ nav>img {
 }
 
 .currPriceLT {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
     margin-top: 0px;
     font-size: 18px;
     font-weight: 100;
 }
 
-
-#slideLT,#slideLT-2 {
+#slideLT,
+#slide-2LT {
     width: 95%;
     margin-left: 2%;
     margin-top: 0px;
     margin-bottom: 10px;
 }
 
-.exchangeLT > img {
+.exchangeLT>img {
     margin-top: 3%;
     margin-left: 45%;
     margin-bottom: -2%;
@@ -385,12 +313,11 @@ nav>img {
     width: 21%;
     margin-left: 10px;
     height: 5%;
-    margin-top: -10%;
+    margin-top: -8%;
     border: none;
     outline: none;
     border-radius: 30px;
     background: linear-gradient(#E86EA0, #BA28FF);
-    color:#ffffff;
     font-weight: 500;
     font-size: 16px;
 }
@@ -398,25 +325,27 @@ nav>img {
 .lineWithTextLT {
     margin-top: -5px;
     padding-top: 20px;
-    margin-left: 10px;
     margin-right: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: black;
+    padding-left: 4%;
     font-size: 23px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .boldLineLT {
+    display: flex;
+    flex-direction: row;
     font-size: 23px;
     font-weight: 300;
 }
 
 .logoOfCurrencyLT {
     margin-top: 15px;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 .arrowToRightLT {
@@ -424,4 +353,87 @@ nav>img {
     margin-right: 10px;
     position: relative;
     top: -10px;
+}
+
+.burgerMenuLT {
+    display: none;
+    visibility: hidden;
+}
+
+.pairLT {
+    position: relative;
+    top: -20%;
+    left: 25%;
+    width: 50%;
+    height: 20%;
+}
+
+@media screen and (max-width:441px) {
+    .burgerMenuLT {
+        display: block;
+        visibility: visible;
+    }
+
+    header {
+        visibility: hidden;
+        display: none;
+    }
+
+    nav>#loginLT {
+        width: 30%;
+        padding-left: 45px;
+        font-weight: 400;
+        margin-left: 53%;
+        margin-bottom: 10px;
+    }
+
+    .wrapperLT {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #forBackkLT {
+        height: 100%;
+    }
+
+    #forBackgrounddLT,
+    body {
+        height: 290vh;
+    }
+
+    .cryptoLT {
+        display: none;
+    }
+
+    .searchBarLT {
+        height: 70%;
+    }
+
+    .searchLT {
+        background: none;
+    }
+
+    .pooledTokLT {
+        padding-bottom: 20px;
+    }
+
+    .pairLT {
+        visibility: hidden;
+    }
+
+    .exchangeLT {
+        padding-bottom: 60px;
+    }
+
+    .yourBalanceButtLT {
+        top: 223%;
+        width: 90%;
+        margin-top: 0px;
+    }
+
+    .exchangeLT>img {
+        margin-top: 5%;
+        margin-left: 45%;
+        margin-bottom: -2%;
+    }
 }
