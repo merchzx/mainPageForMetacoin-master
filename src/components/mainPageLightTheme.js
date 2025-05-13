@@ -106,7 +106,7 @@ export function MainPageLightTheme(props) {
         <div id='forBackLT'>
             <div id='forBackgroundLT'>
                 <Header link='' amount="5" />
-                <BurgerMenu theme='light'></BurgerMenu>
+                <BurgerMenu link='' theme='light'></BurgerMenu>
                 <div id='wrapper'>
                     <div className='startNowLT'>
                         <h1>All In One</h1>

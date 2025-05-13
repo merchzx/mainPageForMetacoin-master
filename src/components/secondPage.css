@@ -376,6 +376,7 @@ header {
 
 @media screen and (max-width:441px) {
     .burgerMenu {
+        z-index: 5;
         display: block;
         visibility: visible;
     }
@@ -433,6 +434,7 @@ header {
     }
 
     .yourBalanceButt {
+        z-index: 1;
         top: 223%;
         width: 90%;
         margin-top: 0px;

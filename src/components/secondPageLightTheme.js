@@ -76,7 +76,7 @@ export function PageWithGraphLightTheme(props) {
     return (
         <div id='forBackkLT'>
             <div id='forBackgrounddLT'>
-                <BurgerMenu theme='light'></BurgerMenu>
+                <BurgerMenu link='largeGraph' theme='light'></BurgerMenu>
                 <Header link='largeGraph' amount='2'></Header>
                 <div className="wrapperLT">
                     <div className="searchLT">

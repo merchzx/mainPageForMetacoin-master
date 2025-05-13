@@ -1,5 +1,6 @@
 header {
     padding-top: 25px;
+    padding-left: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,7 +44,8 @@ nav>img {
 }
 
 .loginAndElse {
-    padding-top: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     width: 350px;
     display: flex;
     flex-direction: row;

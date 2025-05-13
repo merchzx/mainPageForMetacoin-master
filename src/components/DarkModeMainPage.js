@@ -109,7 +109,7 @@ export function DarkMode(props) {
         <div id='forBack'>
             <div id='forBackground'>
                 <Header link='MainLightTheme' amount="6" />
-                <BurgerMenu theme='dark'></BurgerMenu>
+                <BurgerMenu link='MainLightTheme' theme='dark'></BurgerMenu>
                 <div id='wrapper'>
                     <div className='startNow'>
                         <h1>All In One</h1>

@@ -7,6 +7,7 @@ import { Registr } from './components/registrPage';
 import {PageWithGraphLightTheme} from './components/secondPageLightTheme'
 import { MainPageLightTheme } from './components/mainPageLightTheme';
 import { LargeTable } from './components/thirdPage';
+import { LargeTableLT } from './components/thirdPageLT';
 
 class App extends React.Component {
 
@@ -21,6 +22,7 @@ class App extends React.Component {
             <Route path="/registr" element={<Registr></Registr>}></Route>
             <Route path="/MainLightTheme" element={<MainPageLightTheme></MainPageLightTheme>}></Route>
             <Route path="/largeTable" element={<LargeTable></LargeTable>}></Route>
+            <Route path="/largeTableLightTheme" element={<LargeTableLT></LargeTableLT>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
