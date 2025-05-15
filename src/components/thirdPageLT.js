@@ -69,7 +69,7 @@ export function LargeTableLT(props) {
                 <BurgerMenu link='largeTable' theme='light'></BurgerMenu>
                 <Header link='largeTable' amount='1'></Header>
                 <div class="wrapperThirdPage">
-                    <div className='sliderWithCurrencyes'>
+                    <div className='sliderWithCurrencyesLT'>
                         <TradingViewWidget name="BINANCE:BTCUSDT"></TradingViewWidget>
                         <TradingViewWidget name="BINANCE:ETHUSDT"></TradingViewWidget>
                         <TradingViewWidget name="BINANCE:DOGEUSDT"></TradingViewWidget>

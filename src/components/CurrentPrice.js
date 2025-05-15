@@ -16,9 +16,9 @@ function useEthPrice() {
         }
 
         fetchPrice();
-        const interval = setInterval(fetchPrice, 60000); // обновлять каждую минуту
+        const interval = setInterval(fetchPrice, 60000);
 
-        return () => clearInterval(interval); // очистка интервала при размонтировании
+        return () => clearInterval(interval); 
     }, []);
 
     return ethPrice;
