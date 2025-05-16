@@ -57,7 +57,7 @@ export function BurgerMenu(props) {
                             <img src="lightRound.png" alt="round" />
                         </Link>
                     </div>
-                    <a id='login' href='#'>Log In</a>
+                    <Link to={'/registr'} id='login' >Log In</Link>
                 </nav>
             </div>
         )

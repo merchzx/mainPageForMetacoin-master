@@ -24,7 +24,7 @@ export function Header(props) {
                             <img src="round.png" alt="round" />
                         </Link>
                     </div>
-                    <a id='login' href='#'>Log In</a>
+                     <Link to={'/registr'} id='login'>Log In</Link>
                 </div>
             </header>
         )
@@ -51,7 +51,7 @@ export function Header(props) {
                             <img src="lightRound.png" alt="round" />
                         </Link>
                     </div>
-                    <a id='login' href='#'>Log In</a>
+                    <Link to={'/registr'} id='login'>Log In</Link>
                 </div>
             </header>
         )
@@ -77,7 +77,7 @@ export function Header(props) {
                             <img src="LightRound.png" alt="round" />
                         </Link>
                     </div>
-                    <a id='login' href='#'>Log In</a>
+                  <Link to={'/registr'} id='login'>Log In</Link>
                 </div>
             </header>
         )
@@ -99,7 +99,7 @@ export function Header(props) {
                             <img src="lightRound.png" alt="round" />
                         </Link>
                     </div>
-                    <a id='login' href='#'>Log In</a>
+                    <Link to={'/registr'} id='login'>Log In</Link>
                 </div>
             </header>
         )
@@ -121,7 +121,7 @@ export function Header(props) {
                             <img src="round.png" alt="round" />
                         </Link>
                     </div>
-                    <a id='login' href='#'>Log In</a>
+               <Link to={'/registr'} id='login'>Log In</Link>
                 </div>
             </header>
         )
