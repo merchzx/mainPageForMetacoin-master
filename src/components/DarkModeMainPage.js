@@ -145,7 +145,7 @@ export function DarkMode(props) {
                         <div className='largeGraph'>
                             <TradingViewMarketOverview></TradingViewMarketOverview>
                         </div>
-                        <a href='#'>VIEW MORE</a>
+                        <a className='viewMore' href='#'>VIEW MORE</a>
                     </div>
                     <div className='ourResults'>
                         <div>

@@ -101,6 +101,7 @@ export function LargeTableLT(props) {
                         <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
                         <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
                     </div>
+                     <a className='viewMore' id='isVisible' href='#'>VIEW MORE</a>
                 </div>
             </div>
         </div>

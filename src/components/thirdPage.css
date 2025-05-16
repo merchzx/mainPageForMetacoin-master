@@ -166,17 +166,49 @@
     margin-left: 7%;
 }
 
-.itemOfTable>:nth-child(9),:nth-child(10),:nth-child(11) {
-    color: #48974c;
+#marginLeftThirdPage {
+    margin-left: 11%;
 }
 
-.itemOfTable>#marginLeftThirdPage {
-    margin-left: 11%;
+.itemOfTable>:nth-child(9) {
+    color: #48974c;
+    margin-right: 10px;
+
+}
+
+.itemOfTable>:nth-child(10) {
+    color: #48974c;
+    margin-right: 10px;
+
+}
+
+.itemOfTable>:nth-child(11) {
+    color: #48974c;
+    margin-right: 10px;
+
+}
+
+#isVisible {
+    display: none;
+    visibility: hidden;
 }
 
 @media screen and (max-width:440px) {
     .burgerMenu {
         visibility: visible;
+    }
+
+    #isVisible {
+        display: block;
+        visibility: visible;
+        margin-left: 20%;
+        margin-bottom: -13%;
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .mainTable {
+        margin-bottom: 20px;
     }
 
     .searchBarThirdPage {
@@ -215,6 +247,7 @@
         height: 70%;
         flex-direction: column;
         margin-top: 25%;
+        border-radius: 25px;
     }
 
     .exampleLine {
@@ -230,7 +263,7 @@
 
 
     .exampleLine>img {
-        margin-top: 0.5%;
+        margin-top: 5%;
         width: 20px;
         height: 20px;
     }
@@ -241,10 +274,10 @@
         font-weight: 300;
         color: white;
         text-transform: uppercase;
-        padding-top: 0.5%;
+        padding-top: 5%;
     }
 
-    .exampleLine>p:nth-child(2){
+    .exampleLine>p:nth-child(2) {
         margin-left: 17%;
     }
 
@@ -301,26 +334,21 @@
         width: 40px;
         height: 40px;
         margin-top: 10px;
-        margin-left: 5px;
+        margin-left: 35px;
         margin-right: 5px;
     }
 
     .itemOfTable> :nth-child(5) {
         margin-top: 10px;
-
-        margin-left: 3%;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 100%;
     }
 
-
-    .itemOfTable> :nth-child(6) {
-        margin-left: 5%;
+    #marginToLeft,
+    #marginLeftThirdPage {
+        display: none;
     }
 
-    .itemOfTable> :nth-child(7) {
-        margin-left: 7%;
-    }
-
-    .itemOfTable>#marginLeftThirdPage {
-        margin-left: 10%;
-    }
+  
 }
