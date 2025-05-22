@@ -167,14 +167,14 @@ export function MainPageLightTheme(props) {
                         <div className='toRowLT'>
                             <h1 className='logo'>FOMO DEX</h1>
                             <div className='downloadOnLT'>
-                                <img src='apple.png'></img>
+                                <img className='imgFooter' src='appleDark.png'></img>
                                 <div className='forTextLT'>
                                     <p>DOWNLOAD ON</p>
                                     <p>App Store</p>
                                 </div>
                             </div>
                             <div className='downloadOnLT'>
-                                <img src='playMarket.png'></img>
+                                <img className='imgFooter' src='playMarketDark.png'></img>
                                 <div className='forTextLT'>
                                     <p>DOWNLOAD ON</p>
                                     <p>Google Play</p>

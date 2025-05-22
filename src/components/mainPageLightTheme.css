@@ -19,6 +19,10 @@ html, body {
     height: 3600px;
 }
 
+.imgFooter {
+    width: 40px;
+}
+
 #wrapper {
     /* border: 3px solid red; */
     width: 1254px;
