@@ -8,6 +8,7 @@ import {PageWithGraphLightTheme} from './components/secondPageLightTheme'
 import { MainPageLightTheme } from './components/mainPageLightTheme';
 import { LargeTable } from './components/thirdPage';
 import { LargeTableLT } from './components/thirdPageLT';
+import { Login } from './components/loginPage';
 
 class App extends React.Component {
 
@@ -23,6 +24,7 @@ class App extends React.Component {
             <Route path="/MainLightTheme" element={<MainPageLightTheme></MainPageLightTheme>}></Route>
             <Route path="/largeTable" element={<LargeTable></LargeTable>}></Route>
             <Route path="/largeTableLightTheme" element={<LargeTableLT></LargeTableLT>}></Route>
+            <Route path="/login" element={<Login></Login>}></Route>
           </Routes>
         </BrowserRouter>
       </div>

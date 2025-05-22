@@ -310,10 +310,10 @@ header {
 }
 
 .yourBalanceButtLT {
-    width: 21%;
-    margin-left: 10px;
-    height: 5%;
-    margin-top: -8%;
+    margin-left: 5%;
+    height: 10%;
+    width: 90%;
+    margin-top: 3%;
     border: none;
     outline: none;
     border-radius: 30px;
@@ -396,8 +396,7 @@ header {
         height: 100%;
     }
 
-    #forBackgrounddLT,
-    body {
+    #forBackgrounddLT {
         height: 290vh;
     }
 
@@ -426,7 +425,6 @@ header {
     }
 
     .yourBalanceButtLT {
-        top: 223%;
         width: 90%;
         margin-top: 0px;
     }

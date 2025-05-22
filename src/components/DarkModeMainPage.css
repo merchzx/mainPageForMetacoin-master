@@ -11,7 +11,7 @@ html, body {
 
 #forBackground {
     height: 3600px;
-    background-image: url('scrollbackground.png');
+    background-image: url('/public/scrollbackground.png');
 }
 
 #forBack {

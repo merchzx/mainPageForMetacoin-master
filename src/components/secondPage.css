@@ -5,11 +5,11 @@
 
 #forBackgroundd {
     height: 100vh;
-    background-image: url('scrollbackground.png');
+    background-image: url('/public/scrollbackground.png');
 }
 
 #forBackk {
-    background-image: url('scrollbackground.png');
+    background-image: url('/public/scrollbackground.png');
     background-color: #210B54;
     height: 100vh;
 }
@@ -315,10 +315,10 @@ header {
 }
 
 .yourBalanceButt {
-    width: 21%;
-    margin-left: 10px;
-    height: 5%;
-    margin-top: -8%;
+    margin-left: 5%;
+    height: 10%;
+    width: 90%;
+    margin-top: 3%;
     border: none;
     outline: none;
     border-radius: 30px;

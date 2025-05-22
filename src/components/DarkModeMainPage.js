@@ -108,7 +108,7 @@ export function DarkMode(props) {
     return (
         <div id='forBack'>
             <div id='forBackground'>
-                <Header link='MainLightTheme' amount="6" />
+                <Header linkBack='' link='MainLightTheme' amount="mainPageDarkMode" />
                 <BurgerMenu link='MainLightTheme' theme='dark'></BurgerMenu>
                 <div id='wrapper'>
                     <div className='startNow'>
@@ -168,7 +168,7 @@ export function DarkMode(props) {
                     <footer>
 
                         <div className='toRow'>
-                            <h1 className='logo'>CRYPTO SIGMAS</h1>
+                            <h1 className='logo'>FOMO DEX</h1>
                             <div className='downloadOn'>
                                 <img src='apple.png'></img>
                                 <div className='forText'>

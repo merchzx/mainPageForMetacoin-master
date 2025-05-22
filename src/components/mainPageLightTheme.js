@@ -105,7 +105,7 @@ export function MainPageLightTheme(props) {
     return (
         <div id='forBackLT'>
             <div id='forBackgroundLT'>
-                <Header link='' amount="5" />
+                <Header link='' amount="mainPageLightMode" />
                 <BurgerMenu link='' theme='light'></BurgerMenu>
                 <div id='wrapper'>
                     <div className='startNowLT'>
@@ -165,7 +165,7 @@ export function MainPageLightTheme(props) {
                     <footer>
 
                         <div className='toRowLT'>
-                            <h1 className='logo'>CRYPTO SIGMAS</h1>
+                            <h1 className='logo'>FOMO DEX</h1>
                             <div className='downloadOnLT'>
                                 <img src='apple.png'></img>
                                 <div className='forTextLT'>

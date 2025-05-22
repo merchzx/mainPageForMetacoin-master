@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    /* border: 1px solid red; */
+}
+
+
+.cryptoo,
+.sigmas {
+    color: transparent;
+    -webkit-text-stroke: 2px #772abe;
+    font-family: "Roboto Slab", serif;
+}
+
+.cryptoo {
+    cursor: default;
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    font-size: 400px;
+}
+
+
+.sigmas {
+    cursor: default;
+    position: absolute;
+    z-index: 2;
+    top: 470px;
+    left: 1000px;
+    font-size: 350px;
+}
+
+.parent,
+.login {
+    position: absolute;
+    z-index: 3;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+input {
+    filter: drop-shadow(1px 1px 1px #363636);
+}
+
+input {
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 67px;
+    height: 50px;
+}
+
+.login {
+    cursor: pointer;
+}
+
+.forBack {
+    height: 100vh;
+    background-color: #210B54;
+}
+
+.forBackImg {
+    height: 100vh;
+    background-image: url('/public/scrollbackground.png');
+}
+
+.parent {
+    margin-top: 12%;
+    margin-left: 10%;
+    width: 35%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 20%;
+}
+
+.div8,
+.div9 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+}
+
+
+
+.div8 {
+    margin-top: 18%;
+    grid-area: 7 / 1 / 10 / 13;
+}
+
+.div9 {
+    margin-top: -18%;
+    grid-area: 10 / 1 / 13 / 13;
+}
+
+
+input::placeholder {
+    color: #4E5573;
+    opacity: 0.5;
+    padding-left: 12px;
+}
+
+.login {
+    border: none;
+    outline: none;
+    margin-left: 10%;
+    width: 24.5%;
+    height: 5.5%;
+    border-radius: 67px;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color: white;
+    top: 580px;
+    font-size: 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #ff66cc;
+    /* розовый как в макете */
+    font-weight: bold;
+}
+
+.linkToRegister {
+    color: rgb(153, 153, 153);
+    position: relative;
+    text-decoration: none;
+    top: 270px;
+    z-index: 6;
+    font-family: "Roboto Slab", serif;
+    font-size: 34px;
+    font-weight: 400;
+    left: 270px;
+}
+
+.linkToLogin {
+    background: -webkit-linear-gradient(90deg, rgba(190, 46, 247, 1) 0%, rgba(229, 105, 167, 1) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    text-decoration: none;
+    top: 270px;
+    z-index: 6;
+    font-family: "Roboto Slab", serif;
+    font-size: 34px;
+    font-weight: 400;
+    left: 190px;
+}
+
+.toBack {
+    position: relative;
+    top: 620px;
+    padding: 12px;
+    padding-top: 12px;
+    border-radius: 50px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+.arrowBack {
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+.toBackText {
+    position: relative;
+    top: 600px;
+    margin-left: 13%;
+    color: #FFFF;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}

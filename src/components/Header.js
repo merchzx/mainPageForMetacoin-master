@@ -3,7 +3,7 @@ import '../components/Header.css'
 import React, { useEffect, useRef, useState } from 'react';
 
 export function Header(props) {
-    if (props.amount === "6") {
+    if (props.amount === "mainPageDarkMode") {
         return (
             <header>
                 <h1 className='logo'>FOMO DEX</h1>
@@ -24,7 +24,7 @@ export function Header(props) {
                             <img src="round.png" alt="round" />
                         </Link>
                     </div>
-                     <Link to={'/registr'} id='login'>Log In</Link>
+                    <Link to={'/registr'} id='login'>Log In</Link>
                 </div>
             </header>
         )
@@ -56,7 +56,7 @@ export function Header(props) {
             </header>
         )
     }
-    else if (props.amount === "5") {
+    else if (props.amount === "mainPageLightMode") {
         return (
             <header>
                 <h1 className='logo'>FOMO DEX</h1>
@@ -77,12 +77,12 @@ export function Header(props) {
                             <img src="LightRound.png" alt="round" />
                         </Link>
                     </div>
-                  <Link to={'/registr'} id='login'>Log In</Link>
+                    <Link to={'/registr'} id='login'>Log In</Link>
                 </div>
             </header>
         )
     }
-    else if (props.amount === "3") {
+    else if (props.amount === "secondPageLightTheme") {
         return (
             <header>
                 <h1 className='logo'>FOMO DEX</h1>
@@ -99,7 +99,7 @@ export function Header(props) {
                             <img src="lightRound.png" alt="round" />
                         </Link>
                     </div>
-                    <Link to={'/registr'} id='login'>Log In</Link>
+                    <Link to={'/login'} id='login'>Log In</Link>
                 </div>
             </header>
         )
@@ -121,7 +121,7 @@ export function Header(props) {
                             <img src="round.png" alt="round" />
                         </Link>
                     </div>
-               <Link to={'/registr'} id='login'>Log In</Link>
+                    <Link to={'/registr'} id='login'>Log In</Link>
                 </div>
             </header>
         )
