@@ -104,7 +104,7 @@ export function Header(props) {
             </header>
         )
     }
-    else {
+    else if(props.amount === 'thirdPageDarkTheme') {
         return (
             <header>
                 <h1 className='logo'>FOMO DEX</h1>
@@ -119,6 +119,29 @@ export function Header(props) {
                         <Link to={'/' + props.link}>
                             <img className='nightModeImg' src="nightMode.png" alt="switch" />
                             <img src="round.png" alt="round" />
+                        </Link>
+                    </div>
+                    <Link to={'/registr'} id='login'>Log In</Link>
+                </div>
+            </header>
+        )
+    }
+
+     else if(props.amount === 'thirdPageLightTheme') {
+        return (
+            <header>
+                <h1 className='logo'>FOMO DEX</h1>
+                <nav className='miniNav'>
+                    <Link to={'/largeTable'} href='#'>Products</Link><img src='arrow.png'></img>
+                    <Link to={'/'} href='#'>Trade</Link><img src='arrow.png'></img>
+                </nav>
+                <div className='loginAndElse'>
+                    <img src='internet.png' href="#"></img>
+                    <img src='settings.png' href="#"></img>
+                    <div className="switchTheme">
+                        <Link to={'/' + props.link}>
+                            <img className='nightModeImg' src="lightMode.png" alt="switch" />
+                            <img src="lightRound.png" alt="round" />
                         </Link>
                     </div>
                     <Link to={'/registr'} id='login'>Log In</Link>

@@ -6,7 +6,7 @@ export function InputString(props) {
     return (
         <div className={props.divName}>
             <label>{props.label}
-                <input placeholder={props.placeholder} className={props.classType} type={props.type} />
+                <input id='forAdaptiveInputs' placeholder={props.placeholder} className={props.classType} type={props.type} />
             </label>
         </div>
     );
@@ -17,10 +17,10 @@ export function ButtonSubmit(props) {
         <button className='signUp' type="submit">{props.text}</button>
     );
 }
-
+//d
 export function Registr() {
     return (
-        <div className='forBack'>
+        <div className='forBackRegister'>
             <div className="topnavigation">
                 <Link className='linkToLogin1' to={'/login'}>Login</Link>
                 <Link className='linkToRegister2' to='/registr'>Sign Up</Link>

@@ -63,7 +63,7 @@ input {
   height: 50px;
 }
 
-.forBack {
+.forBackRegister {
   height: 100vh;
   background-color: #210B54;
 }
@@ -172,7 +172,7 @@ input::placeholder {
 
 .linkToRegister2 {
   background: -webkit-linear-gradient(90deg, rgba(190, 46, 247, 1) 0%, rgba(229, 105, 167, 1) 50%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
   text-decoration: none;
@@ -196,36 +196,34 @@ input::placeholder {
   left: 190px;
 }
 
-@media screen and (max-width: 440px) {
-  .burgerMenu {
-    visibility: visible;
-  }
 
-  body {
-    height: 100vh;
-  }
+@media screen and (max-width:440px) {
 
-
-  .cryptoo {
-    font-size: 60px;
-    left: 10px;
-    top: 10px;
-  }
-
-  .sigmas {
-    font-size: 50px;
-    left: 10px;
-    top: 90px;
-  }
-
-  .parent {
+  .parentRegister {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 180px;
-    gap: 10px;
+    width: 88vw;
+    margin-top: 20%;
+  }
+
+  .cryptoo {
+    width: 88vw;
+  }
+
+  #forAdaptiveInputs {
+    left: 0px;
+    margin-left: 10px;
+    width: 80vw;
+    height: 40px;
+  }
+
+  .div1>label,
+  .div2>label,
+  .div3>label,
+  .div4>label,
+  .div5>label,
+  .div6>label {
+    font-size: 16px;
   }
 
   .div1,
@@ -234,130 +232,38 @@ input::placeholder {
   .div4,
   .div5,
   .div6 {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    height: 45px;
-    font-size: 16px;
+    height: 70px;
+    left: 0;
+    margin-top: 0;
   }
 
   .signUp {
-    position: static;
-    margin-top: 10px;
-    width: 100%;
-    height: 45px;
-    font-size: 18px;
+    width: 90%;
+    margin-left: 10px;
+    height: 10%;
   }
 
   .linkToLogin1,
   .linkToRegister2 {
-    position: static;
-    font-size: 16px;
-    text-align: center;
-    margin: 10px 5px;
+    top: 40px;
+    left: 0px;
   }
 
-  .linkContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 10px;
-    position: absolute;
-    top: 10px;
+  .linkToLogin1 {
+    left: 30%;
   }
-}
 
-@media screen and (max-width: 440px) {
-  .forBackImg .cryptoo {
-    font-size: 180px;
+  .linkToRegister2 {
+    left: 35%;
+  }
+
+  #forRegisterToBack {
     left: 30px;
-    top: 15px;
-    -webkit-text-stroke: 1px #772abe;
+    top: 650px;
   }
 
-  .forBack .forBackImg .sigmas {
-    font-size: 180px;
-    left: 15px;
-    top: 485px;
-    -webkit-text-stroke: 1px #772abe;
-  }
-
-
-  .forBack .forBackImg .parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 150px;
-    gap: 12px;
-    height: auto;
-    position: static;
-    grid-template-columns: unset;
-  }
-
-
-  .forBack .forBackImg .div1,
-  .forBack .forBackImg .div2,
-  .forBack .forBackImg .div3,
-  .forBack .forBackImg .div4,
-  .forBack .forBackImg .div5,
-  .forBack .forBackImg .div6 {
-    position: static;
-    width: 60%;
-    height: auto;
-    margin: 0;
-    grid-area: unset;
-    left: 0;
-    padding-top: -30px;
-  }
-
-
-  .forBack .forBackImg input[type="text"],
-  .forBack .forBackImg input[type="email"],
-  .forBack .forBackImg input[type="password"] {
-    width: 100%;
-    height: 45px;
-    font-size: 12px;
-  }
-
-
-  .forBack .forBackImg .signUp {
-    position: static;
-    width: 60%;
-    height: 45px;
-    margin-top: 10px;
-    font-size: 15px;
-    top: auto;
-    left: auto;
-  }
-
-
-  .forBack .topnavigation .linkToLogin1,
-  .forBack .topnavigation .linkToRegister2 {
-    position: static;
-    font-size: 34px;
-    text-align: center;
-    margin: 10px 5px;
-    background: none;
-    -webkit-text-fill-color: initial;
-    top: auto;
-    left: auto;
-    padding-bottom: -550px;
-  }
-
-  .forBack .topnavigation {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0%;
-    position: static;
+  #forRegisterToBackText {
+    top: 630px;
+    left: 30px;
   }
 }

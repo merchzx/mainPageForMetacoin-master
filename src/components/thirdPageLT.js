@@ -67,7 +67,7 @@ export function LargeTableLT(props) {
         <div id='forBackkLT'>
             <div id='forBackgrounddLT'>
                 <BurgerMenu link='largeTable' theme='light'></BurgerMenu>
-                <Header link='largeTable' amount='1'></Header>
+                <Header link='largeTable' amount='thirdPageLightTheme'></Header>
                 <div class="wrapperThirdPage">
                     <div className='sliderWithCurrencyesLT'>
                         <TradingViewWidget name="BINANCE:BTCUSDT"></TradingViewWidget>
@@ -93,13 +93,13 @@ export function LargeTableLT(props) {
                             <p id='marginToLeft' className='boldTextLT'>volume(24)</p>
                             <p id='marginToLeft' className='boldTextLT'>transactions</p>
                         </div>
-                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
-                        <ItemOfTable src='sol' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
-                        <ItemOfTable src='xrp' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
-                        <ItemOfTable src='usdt' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
-                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
-                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
-                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='lorem loren' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='1c23-rfghs3' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='sol' tick='ETH' fullName='Ethereum' addres='1c23-rfghs3' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='xrp' tick='ETH' fullName='Ethereum' addres='1c23-rfghs3' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='usdt' tick='ETH' fullName='Ethereum' addres='1c23-rfghs3' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='1c23-rfghs3' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='1c23-rfghs3' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
+                        <ItemOfTable src='eth' tick='ETH' fullName='Ethereum' addres='1c23-rfghs3' value='1.1' balance='0' liquidity='24M %' volume='+1.2%' transaction='+11.2%'></ItemOfTable>
                     </div>
                      <a className='viewMore' id='isVisible' href='#'>VIEW MORE</a>
                 </div>

@@ -67,7 +67,7 @@ export function LargeTable(props) {
         <div id='forBackk'>
             <div id='forBackgroundd'>
                 <BurgerMenu link='largeTableLightTheme' theme='dark'></BurgerMenu>
-                <Header link='largeTableLightTheme' amount='6'></Header>
+                <Header link='largeTableLightTheme' amount='thirdPageDarkTheme'></Header>
                 <div class="wrapperThirdPage">
                     <div className='sliderWithCurrencyes'>
                         <TradingViewWidget name="BINANCE:BTCUSDT"></TradingViewWidget>
