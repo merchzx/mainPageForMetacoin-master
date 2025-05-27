@@ -81,7 +81,7 @@ export function PageWithGraph(props) {
         <div id='forBackk'>
             <div id='forBackgroundd'>
                 <BurgerMenu link='LighThemeLargeGraph' theme='dark'></BurgerMenu>
-                <Header link='LighThemeLargeGraph' amount=''></Header>
+                <Header link='LighThemeLargeGraph' amount='thirdPageDarkTheme'></Header>
                 <div class="wrapper">
                     <div class="search">
                         <div className='searchBar'>
